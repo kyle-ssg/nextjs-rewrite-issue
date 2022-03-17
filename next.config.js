@@ -4,8 +4,9 @@ const nextConfig = {
   rewrites: async ()=>{
     return {
       beforeFiles: [
-          { source: '/nfl', destination: '/_sport/nfl' },
-          { source: '/nfl/test', destination: '/_sport/nfl/test' },
+          // uncommenting will prevent the issue
+          // { source: '/nfl', destination: '/_sport/nfl' },
+          // { source: '/nfl/test', destination: '/_sport/nfl/test' },
           { source: '/nfl/:path*', destination: '/_sport/nfl/:path*' },
       ]
     }
